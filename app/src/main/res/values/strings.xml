@@ -1,0 +1,129 @@
+<resources>
+
+    <string name="app_name">Summit Pay</string>
+
+    <string name="text_back">Back</string>
+    <string name="text_skip">Skip</string>
+    <string name="text_add">add</string>
+    <string name="text_edit">edit</string>
+    <string name="text_try_again">Try again</string>
+    <string name="text_thanks">Thanks</string>
+    <string name="text_sorry">Sorry</string>
+    <string name="text_cancel">Cancel</string>
+    <string name="text_done">Done</string>
+    <string name="text_next">Next</string>
+
+    <string name="error_connection">
+        Oops! You don\’t seem to be connected to the internet. Please check your connection and try again.
+        \n
+        \nYou\’ll be able to use the app again as soon as you have a connection.
+    </string>
+    <string name="error_not_valid_email">Oops! Your email has an incorrect format. Try again</string>
+    <string name="error_not_valid_name">Oops! Your name has an incorrect format. Try again</string>
+    <string name="error_click_operation">Click operation error!</string>
+    <string name="error_no_internet_connection">Check internet connection</string>
+    <string name="error_unexpected">Unexpected error</string>
+    <string name="error_converting_data">Data converting error</string>
+    <string name="error_request_failed">Request failed again. Try one more time.</string>
+
+    <string name="login_pin_code_title">Enter your code below</string>
+    <string name="login_pin_code_title_error">Device is blocked. Enter admin PIN</string>
+    <string name="login_pin_code_unblock_success">The device has been unlocked by %1$s</string>
+    <string name="login_pin_code_button">Login</string>
+
+    <string name="assign_company_number_title">Welcome to Summit Pay</string>
+    <string name="assign_company_number_sub_title">Please enter your 10 digit\ncompany reference number</string>
+    <string name="assign_company_number_hint">e.g. 8210Y728GH</string>
+    <string name="assign_company_number_error">Please enter a valid reference number</string>
+
+    <string name="assign_device_info_title">Now, please give this device a relevant name and location</string>
+    <string name="assign_device_info_hint">e.g. Main till, Bar area etc</string>
+    <string name="assign_device_location_hint">Location…</string>
+    <string name="assign_device_info_button_register">Register this device</string>
+
+    <string name="assign_device_success_title">Success</string>
+    <string name="assign_device_success_message_1">Device now added</string>
+    <string name="assign_device_success_message_2">This device is now registered for use with <b>Summit Pay</b></string>
+    <string name="assign_device_success_sign_in">Sign in</string>
+
+    <string name="login_credentials_title">Log In to Summit Pay</string>
+    <string name="login_credentials_email_hint">Email</string>
+    <string name="login_credentials_password_hint">Password</string>
+    <string name="login_credentials_login_button">Log in</string>
+
+    <string name="food_order_price">£%1$.2f</string>
+    <string name="charge_button_card_text">Charge Card Payment £%1$.2f</string>
+    <string name="charge_button_cash_text">Charge Cash Payment £%1$.2f</string>
+    <string name="total_sum_text">Total £%1$.2f</string>
+    <plurals name="food_option_text_plurals">
+        <item quantity="zero"> </item>
+        <item quantity="one">%1$d option</item>
+        <item quantity="two">%1$d options</item>
+        <item quantity="few">%1$d options</item>
+        <item quantity="many">%1$d options</item>
+        <item quantity="other">%1$d options</item>
+    </plurals>
+
+    <string name="timeout_dialog_title">Session timeout</string>
+    <string name="timeout_dialog_message">Please select a timeout to log out automatically.</string>
+
+    <string name="remove_order_items_dialog_title">Product removing</string>
+    <string name="remove_order_items_dialog_message">Please select the products amount to remove.</string>
+
+    <string name="order_product_message_dialog_title">Product message</string>
+    <string name="order_product_message_dialog_message">Please enter a message for %1$s.</string>
+
+    <string name="product_quantity_dialog_title">Product quantity</string>
+    <string name="product_quantity_dialog_message">Please enter a product quantity.</string>
+
+    <string name="order_clearing_dialog_title">Abandon order</string>
+    <string name="order_clearing_dialog_message">Are you sure you want to abandon the order?</string>
+
+    <string name="logout_dialog_title">Log out?</string>
+    <string name="logout_dialog_message">Please, confirm that you want to log out.</string>
+    <string name="logout_dialog_reassign">Also reassign device</string>
+    <string name="logout_dialog_cancel">Cancel</string>
+    <string name="confirm">Confirm</string>
+
+    <string name="drawer_user_name">User: %1$s</string>
+    <string name="drawer_hub_name">Hub location: %1$s</string>
+    <string name="drawer_devices">Devices: %1$s</string>
+
+    <string name="products_search_view_hint">Search products here</string>
+
+    <string name="payment_error_cvv_message_m">CVV2/CVC2 match</string>
+    <string name="payment_error_cvv_message_n">CVV2/CVC2 no match</string>
+    <string name="payment_error_cvv_message_p">Not processed</string>
+    <string name="payment_error_cvv_message_s">Merchant has indicated that CVV2/CVC2 is not present on card</string>
+    <string name="payment_error_cvv_message_u">Issuer is not certified and/or has not provided Visa encryption keys</string>
+
+    <string name="location_rationale_dialog_title">Permission required</string>
+    <string name="location_rationale_dialog_message">Location is required for assigning this device to Summit Pay!</string>
+    <string name="location_rationale_dialog_allow">Allow</string>
+
+    <string name="location_permission_disabled_dialog_title">Permission Disabled</string>
+    <string name="location_permission_disabled_dialog_message">Please, check the location permission in app settings.</string>
+    <string name="location_permission_disabled_dialog_go_to_settings">Go to settings</string>
+
+    <string name="receipt_confirm_dialog_title">Payment Success</string>
+    <string name="receipt_confirm_dialog_message">Do you want to print the receipt?</string>
+
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+
+    <string name="payments_received_by_user">Payments Received By User</string>
+    <string name="sales">Sales</string>
+    <string name="tendered_breakdown">Tendered Breakdown</string>
+    <string name="adjustments">Adjustments</string>
+
+    <string name="refund">Refund</string>
+    <string name="settings">Settings</string>
+
+    <string name="closed_orders">Closed Orders</string>
+    <string name="select_an_order">Select an order to preview</string>
+    <string name="clear_order_item_dialog_title">Clear order items</string>
+    <string name="clear_order_item_dialog_message">Are you sure you want to clear the order items?</string>
+
+    <string name="refund_full_order">Refund Full Order?</string>
+    <string name="total_refund">TOTAL REFUND: £%1$.2f</string>
+</resources>

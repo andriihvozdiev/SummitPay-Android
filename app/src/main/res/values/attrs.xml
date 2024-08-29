@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ColoredPageIndicator">
+        <attr name="view_pager" format="reference"/>
+        <attr name="circle_radius" format="dimension" />
+        <attr name="circle_padding" format="dimension" />
+        <attr name="circle_colors" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="ToolbarView">
+        <attr name="show_back_button" format="boolean"/>
+        <attr name="show_cancel_button" format="boolean"/>
+        <attr name="show_done_button" format="boolean"/>
+        <attr name="title_text" format="string"/>
+        <attr name="title_text_color" format="color"/>
+        <attr name="text_color" format="reference"/>
+    </declare-styleable>
+    <declare-styleable name="PinCodeButton">
+        <attr name="code_background_color" format="reference"/>
+        <attr name="code_text" format="string"/>
+        <attr name="code_text_size" format="dimension"/>
+        <attr name="code_text_color" format="reference"/>
+        <attr name="code_image" format="reference"/>
+        <attr name="code_image_size" format="dimension"/>
+        <attr name="code_image_tint" format="reference"/>
+    </declare-styleable>
+    <bool name="isTablet">false</bool>
+</resources>

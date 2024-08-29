@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:showIn="nav_view">
+    <group android:id="@+id/main" android:checkableBehavior="single">
+       <!-- <item
+            android:id="@+id/debugFragment"
+            android:icon="@drawable/bg_circle"
+            android:title="Debug screen"/>-->
+        <item
+            android:id="@+id/menu_checkout"
+            android:icon="@drawable/ic_menu_checkout"
+            android:title="Checkout"/>
+        <item
+            android:id="@+id/menu_transactions"
+            android:icon="@drawable/ic_menu_transactions"
+            android:title="Transactions"/>
+
+        <group
+            android:id="@+id/group_menu_transactions"
+            android:checkableBehavior="single">
+            <item
+                android:id="@+id/menu_refund"
+                android:icon="@drawable/ic_menu_refund"
+                android:title="Supervisor refunds"
+                android:visible="false"/>
+            <item
+                android:id="@+id/menu_closed_orders"
+                android:icon="@drawable/ic_menu_refund"
+                android:title="Close Orders" />
+        </group>
+
+        <item
+            android:id="@+id/menu_reports"
+            android:icon="@drawable/ic_menu_reports"
+            android:title="Reports"/>
+
+        <group
+            android:id="@+id/group_menu_reports"
+            android:checkableBehavior="single">
+            <item
+                android:id="@+id/menu_x_report"
+                android:icon="@drawable/ic_menu_receipt"
+                android:title="Print X"/>
+            <item
+                android:id="@+id/menu_z_report"
+                android:icon="@drawable/ic_menu_receipt"
+                android:title="Print Z" />
+        </group>
+
+
+        <item
+            android:id="@+id/itemsFragment"
+            android:icon="@drawable/ic_menu_items"
+            android:title="Items"/>
+        <item
+            android:id="@+id/menu_settings"
+            android:icon="@drawable/ic_menu_settings"
+            android:title="Settings" />
+
+        <group
+            android:id="@+id/group_menu_settings"
+            android:checkableBehavior="single">
+            <item
+                android:id="@+id/menu_home"
+                android:icon="@drawable/ic_menu_home"
+                android:title="Home" />
+            <item
+                android:id="@+id/menu_logout"
+                android:icon="@drawable/ic_menu_logout"
+                android:title="Logout" />
+            <item
+                android:id="@+id/menu_timeout"
+                android:icon="@drawable/ic_menu_timeout"
+                android:title="Change timeout"
+                android:visible="false"/>
+        </group>
+
+        <item
+            android:id="@+id/menu_notifications"
+            android:icon="@drawable/ic_menu_notifications"
+            android:title="Notifications"/>
+    </group>
+</menu>

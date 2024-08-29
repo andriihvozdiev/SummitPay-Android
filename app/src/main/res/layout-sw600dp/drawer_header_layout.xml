@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@color/colorAccent"
+    android:gravity="center"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/drawer_user_name_text_view"
+        style="@style/TextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="User: Michael"
+        android:textSize="18sp"
+        android:textColor="@color/colorWhite"
+        android:layout_gravity="center"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:layout_marginBottom="6dp"/>
+
+    <TextView
+        android:id="@+id/drawer_hub_name_text_view"
+        style="@style/TextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="Hub: London"
+        android:textSize="18sp"
+        android:textColor="@color/colorWhite"
+        android:layout_gravity="center"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:layout_marginBottom="6dp"/>
+
+    <TextView
+        android:id="@+id/drawer_devices_available_text_view"
+        style="@style/TextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="Devices: Sony Big Till 2000, A920 POS"
+        android:textSize="18sp"
+        android:textColor="@color/colorWhite"
+        android:layout_gravity="center"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:layout_marginBottom="12dp"/>
+
+    <TextView
+        android:id="@+id/drawer_logout_timeout_text_view"
+        style="@style/TextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="1m"
+        android:textSize="18sp"
+        android:textColor="@color/colorYellow"
+        android:layout_gravity="center"
+        android:maxLines="2"
+        android:ellipsize="end"/>
+
+</LinearLayout>

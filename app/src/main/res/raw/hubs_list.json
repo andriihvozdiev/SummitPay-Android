@@ -1,0 +1,60 @@
+[
+  {
+    "hub_id": "123456",
+    "hub_location": "London",
+    "users": [
+      {
+        "id": 121,
+        "name": "Michael",
+        "code": "1234",
+        "is_admin": true
+      },
+      {
+        "id": 122,
+        "name": "Sarah",
+        "code": "1122"
+      },
+      {
+        "id": 123,
+        "name": "Sergey",
+        "code": "1111"
+      }
+    ],
+    "devices": [
+      {
+        "device_id": "123456",
+        "device_name": "A920 POS"
+      },
+      {
+        "device_id": "654321",
+        "device_name": "e700 POS"
+      }
+    ]
+  },
+  {
+    "hub_id": "654321",
+    "hub_location": "Main Bar",
+    "users": [
+      {
+        "id": 121,
+        "name": "Chris",
+        "code": "4321"
+      },
+      {
+        "id": 122,
+        "name": "Jessy",
+        "code": "0101"
+      }
+    ],
+    "devices": [
+      {
+        "device_id": "123456",
+        "device_name": "A920 POS"
+      },
+      {
+        "device_id": "654321",
+        "device_name": "e700 POS"
+      }
+    ]
+  }
+]

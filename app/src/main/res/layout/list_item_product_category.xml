@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:orientation="vertical"
+    android:background="@drawable/bg_rounded_top_right_bottom_right_8px_selectable"
+    android:backgroundTint="#FCEB53"
+    android:gravity="center"
+    android:layout_marginTop="3dp"
+    android:layout_marginBottom="3dp">
+
+    <TextView
+        android:id="@+id/category_name_text_view"
+        style="@style/TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        tools:text="Latte"
+        android:layout_gravity="center"
+        android:textColor="@color/colorBlack"
+        android:visibility="visible"/>
+
+    <FrameLayout
+        android:id="@+id/category_selectable_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/ic_check_mark"
+            android:tint="@color/colorWhite"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_rounded_8px_border_white"/>
+
+    </FrameLayout>
+
+    <View
+        android:id="@+id/category_border_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_rounded_border_top_right_bottom_right_8px"
+        android:visibility="gone"/>
+
+</FrameLayout>

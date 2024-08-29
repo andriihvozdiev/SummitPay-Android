@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+<!--    <uses-permission android:name="com.aevi.permission.NGS_PRINT_SERVICE"/>-->
+    <uses-permission android:name="com.pax.permission.PRINTER" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <application
+        android:name="com.glance.streamline.StreamlineApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:ignore="AllowBackup,GoogleAppIndexingWarning"
+        tools:targetApi="m">
+
+        <activity android:name="com.glance.streamline.ui.activities.main.MainActivity"
+            android:exported="true"
+            android:windowSoftInputMode="adjustPan"
+            android:resizeableActivity="true"
+            android:screenOrientation="fullSensor"
+            tools:targetApi="n">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+
+        <receiver android:name=".receiver.TransactionResultReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="eft.com.TRANSACTION_RESULT"/>
+                <action android:name="eft.com.TRANSACTION_RECEIPT_EVENT"/>
+                <action android:name="eft.com.TRANS_IN_BATCH_RESPONSE_EVENT"/>
+            </intent-filter>
+        </receiver>
+
+        <service android:name=".services.SyncJobSchedulerService"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+
+    </application>
+
+</manifest>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp">
+
+    <LinearLayout
+        android:id="@+id/order_view"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:background="@drawable/bg_payment_list_item"
+        android:gravity="center_vertical"
+        android:paddingHorizontal="4dp">
+
+        <TextView
+            android:id="@+id/txt_order_no"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.7"
+            android:layout_marginHorizontal="4dp"
+            android:textColor="@color/colorWhite"
+            android:textSize="16sp"
+            tools:text="Latte"/>
+
+        <TextView
+            android:id="@+id/txt_order_date"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginHorizontal="4dp"
+            android:textColor="@color/colorWhite"
+            android:textSize="16sp"
+            tools:text="Latte"/>
+
+        <TextView
+            android:id="@+id/txt_order_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginHorizontal="4dp"
+            android:textColor="@color/colorWhite"
+            android:textSize="16sp"
+            tools:text="Aleksandar"/>
+
+        <TextView
+            android:id="@+id/txt_total_price"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.6"
+            android:layout_marginHorizontal="4dp"
+            android:textColor="@color/colorWhite"
+            android:textSize="16sp"
+            tools:text="£4.50"
+            android:textAlignment="textEnd"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

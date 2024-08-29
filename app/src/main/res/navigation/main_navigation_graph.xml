@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation_graph"
+    app:startDestination="@id/splashFragment">
+
+    <action
+        android:id="@+id/action_to_pinCodeFragment"
+        app:destination="@id/pinCodeFragment"
+        app:popUpTo="@id/main_navigation_graph" />
+
+    <action
+        android:id="@+id/action_to_assignCompanyNumberFragment"
+        app:destination="@id/assignCompanyNumberFragment"
+        app:popUpTo="@id/main_navigation_graph" />
+
+    <action
+        android:id="@+id/action_global_refundFragment"
+        app:destination="@id/refundFragment"/>
+
+    <action
+        android:id="@+id/action_global_closed_orders"
+        app:destination="@id/closedOrdersFragment"/>
+
+    <action
+        android:id="@+id/action_global_settingsFragment"
+        app:destination="@id/settingsFragment"/>
+
+    <fragment
+        android:id="@+id/debugFragment"
+        android:name="com.glance.streamline.ui.fragments.debug.DebugFragment"
+        android:label="DebugFragment"
+        tools:layout="@layout/fragment_debug"/>
+
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.glance.streamline.ui.fragments.splash.SplashFragment"
+        android:label="SplashFragment"
+        tools:layout="@layout/fragment_splash">
+        <action
+            android:id="@+id/action_splashFragment_to_debugFragment"
+            app:destination="@id/debugFragment"
+            app:popUpTo="@id/splashFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_splashFragment_to_checkoutLandscapeFragment"
+            app:destination="@id/checkoutLandscapeFragment"
+            app:popUpTo="@+id/splashFragment"
+            app:popUpToInclusive="true"/>
+        <action
+            android:id="@+id/action_splashFragment_to_checkoutPortraitFragment"
+            app:destination="@id/checkoutPortraitFragment"
+            app:popUpTo="@+id/splashFragment"
+            app:popUpToInclusive="true"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/assignCompanyNumberFragment"
+        android:name="com.glance.streamline.ui.fragments.auth.assign.company_number.AssignCompanyNumberFragment"
+        android:label="AssignCompanyNumberFragment"
+        tools:layout="@layout/fragment_assign_company_number">
+
+        <action
+            android:id="@+id/action_to_assignDeviceInfoFragment"
+            app:destination="@id/assignDeviceInfoFragment"/>
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/assignDeviceInfoFragment"
+        android:name="com.glance.streamline.ui.fragments.auth.assign.device_info.AssignDeviceInfoFragment"
+        android:label="AssignDeviceInfoFragment"
+        tools:layout="@layout/fragment_assign_device_info">
+
+        <action
+            android:id="@+id/action_to_pinCodeFragment"
+            app:destination="@id/pinCodeFragment"
+            app:popUpTo="@id/main_navigation_graph" />
+        <argument
+            android:name="companyNumber"
+            app:argType="string"
+            app:nullable="true" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/pinCodeFragment"
+        android:name="com.glance.streamline.ui.fragments.auth.pin_code.PinCodeFragment"
+        android:label="Pin-code login"
+        tools:layout="@layout/fragment_pin_code">
+        <action
+            android:id="@+id/action_signInFragment_to_verificationFragment"
+            app:destination="@id/credentialsFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_signInFragment_to_checkoutLandscapeFragment"
+            app:destination="@id/checkoutLandscapeFragment"
+            app:popUpToInclusive="true"
+            app:popUpTo="@+id/pinCodeFragment"/>
+        <action
+            android:id="@+id/action_signInFragment_to_checkoutPortraitFragment"
+            app:destination="@id/checkoutPortraitFragment"
+            app:popUpToInclusive="true"
+            app:popUpTo="@+id/pinCodeFragment"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/credentialsFragment"
+        android:name="com.glance.streamline.ui.fragments.auth.credentials.CredentialsFragment"
+        android:label="Credentials login"
+        tools:layout="@layout/fragment_credentials">
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/checkoutLandscapeFragment"
+        android:name="com.glance.streamline.ui.fragments.main.checkout.CheckoutLandscapeFragment"
+        android:label="Checkout"
+        tools:layout="@layout/fragment_checkout_landscape">
+
+        <action
+            android:id="@+id/action_to_paymentDialogFragment"
+            app:destination="@id/paymentDialogFragment" />
+
+        <action
+            android:id="@+id/action_to_tenderOptionsDialogFragment"
+            app:destination="@id/tenderOptionsDialogFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/checkoutPortraitFragment"
+        android:name="com.glance.streamline.ui.fragments.main.checkout.CheckoutPortraitFragment"
+        android:label="Checkout"
+        tools:layout="@layout/fragment_checkout_portrait">
+
+        <action
+            android:id="@+id/action_to_paymentDialogFragment"
+            app:destination="@id/paymentDialogFragment"/>
+
+        <action
+            android:id="@+id/action_to_tenderOptionsDialogFragment"
+            app:destination="@id/tenderOptionsDialogFragment" />
+
+    </fragment>
+
+    <dialog
+        android:id="@+id/paymentDialogFragment"
+        android:name="com.glance.streamline.ui.dialogs.PaymentDialogFragment"
+        android:label="PaymentDialogFragment"
+        tools:layout="@layout/dialog_payment">
+        <argument
+            android:name="productModelDto"
+            app:argType="com.glance.streamline.ui.models.ProductModelDto" />
+    </dialog>
+
+    <dialog
+        android:id="@+id/tenderOptionsDialogFragment"
+        android:name="com.glance.streamline.ui.dialogs.TenderOptionsDialogFragment"
+        android:label="TenderOptionsDialogFragment"
+        tools:layout="@layout/dialog_tender_options">
+        <argument
+            android:name="price"
+            app:argType="float"/>
+        <argument
+            android:name="paymentRequest"
+            app:argType="com.glance.streamline.domain.repository.payment.PaymentRequest"/>
+    </dialog>
+
+
+    <fragment
+        tools:layout="@layout/fragment_refund"
+        android:id="@+id/refundFragment"
+        android:name="com.glance.streamline.ui.fragments.refund.RefundFragment"
+        android:label="@string/refund" />
+
+    <fragment
+        tools:layout="@layout/fragment_closed_orders"
+        android:id="@+id/closedOrdersFragment"
+        android:name="com.glance.streamline.ui.fragments.closed_orders.ClosedOrdersFragment"
+        android:label="@string/closed_orders" />
+
+    <fragment
+        tools:layout="@layout/fragment_settings"
+        android:id="@+id/settingsFragment"
+        android:name="com.glance.streamline.ui.fragments.settings.SettingsFragment"
+        android:label="@string/settings" />
+
+
+</navigation>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/pin_code_root_layout"
+    android:orientation="horizontal"
+    android:background="@drawable/bg_rounded_8px_gray_selectable">
+
+    <TextView
+        android:id="@+id/pin_code_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="36sp"
+        android:textColor="@color/colorWhite"
+        tools:text="1"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:id="@+id/pin_code_image_view"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:adjustViewBounds="true"
+        tools:srcCompat="@drawable/ic_input_delete"
+        android:visibility="gone"
+        tools:ignore="ContentDescription" />
+
+</FrameLayout>

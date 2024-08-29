@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/number_picker_title_text_view"
+        style="@style/TextView"
+        android:layout_width="108dp"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        tools:text="All"
+        android:maxLength="10"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:textColor="@color/colorPrimary"
+        android:padding="8dp"/>
+
+</LinearLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#18191D</color>
+    <color name="colorAccent">#5580EA</color>
+    <color name="colorAccentOp50">#805580EA</color>
+
+    <color name="colorToolbarBackground">#303136</color>
+    <color name="colorPinCodeBackground">#CECECE</color>
+    <color name="colorFoodsListBackground">#232429</color>
+
+    <color name="colorBlueLight">#59AAFF</color>
+    <color name="colorBlueDark">#1C6AC9</color>
+    <color name="colorBlueGray">#F2F6FF</color>
+
+    <color name="colorOrange">#F7C333</color>
+    <color name="colorPurple">#902EAB</color>
+
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorWhiteOp20">#33FFFFFF</color>
+    <color name="colorWhiteOp25">#40FFFFFF</color>
+    <color name="colorWhiteOp50">#80ffffff</color>
+    <color name="colorWhiteOp60">#99ffffff</color>
+    <color name="colorWhiteOp75">#AEffffff</color>
+
+    <color name="colorGray">#949494</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorBlackOp15">#26000000</color>
+    <color name="colorGreen">#7DC5AD</color>
+    <color name="colorRed">#E3503A</color>
+    <color name="colorRedOp50">#80E3503A</color>
+    <color name="colorRedLight">#FF7575</color>
+    <color name="colorYellow">#FFEB3B</color>
+    <color name="colorYellowOp50">#80FFEB3B</color>
+
+    <array name="page_colors_array">
+        <item>@color/colorBubblegum</item>
+        <item>@color/colorFern</item>
+        <item>@color/colorDawn</item>
+        <item>@color/colorReef</item>
+        <item>@color/colorHarbour</item>
+    </array>
+
+    <color name="colorBubblegum">#FA70A8</color>
+    <color name="colorDawn">#EE8E34</color>
+    <color name="colorFern">#74C765</color>
+    <color name="colorFernOp50">#8074C765</color>
+    <color name="colorReef">#22ABA4</color>
+    <color name="colorReefOp50">#8022ABA4</color>
+    <color name="colorHarbour">#397CC0</color>
+
+    <color name="colorHint">#ACB1C0</color>
+
+    <color name="colorDefault">#4E4E56</color>
+    <color name="colorSelectedRow">#23ACA4</color>
+
+</resources>

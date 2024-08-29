@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/connection_error"
+    app:startDestination="@+id/connection_error_screen">
+
+    <fragment
+        android:id="@+id/connection_error_screen"
+        android:name="com.glance.streamline.ui.fragments.connection_error.ConnectionErrorFragment"
+        android:label="Connection error fragment"
+        tools:layout="@layout/fragment_connection_error" />
+
+</navigation>

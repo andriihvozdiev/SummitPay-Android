@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/colorPrimary"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/pin_code_title_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="43dp"
+        android:text="@string/login_pin_code_title"
+        android:textColor="@color/colorWhite"
+        android:textSize="24sp" />
+
+    <com.glance.streamline.utils.custom_views.SquaredLinearLayout
+        android:id="@+id/pin_code_fields_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pin_code_title_text_view"
+        android:layout_alignStart="@+id/pin_code_buttons_layout"
+        android:layout_alignEnd="@+id/pin_code_buttons_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="54dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/pin_code_input_text_view_1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="14dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_rounded_5px_border_white"
+            android:gravity="center"
+            tools:text="*"
+            android:inputType="textPassword"
+            android:textColor="@color/colorWhite"
+            android:textSize="21sp" />
+
+        <TextView
+            android:id="@+id/pin_code_input_text_view_2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="14dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_rounded_5px_border_white"
+            android:gravity="center"
+            tools:text="*"
+            android:inputType="textPassword"
+            android:textColor="@color/colorWhite"
+            android:textSize="21sp" />
+
+        <TextView
+            android:id="@+id/pin_code_input_text_view_3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="14dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_rounded_5px_border_white"
+            android:gravity="center"
+            tools:text="*"
+            android:inputType="textPassword"
+            android:textColor="@color/colorWhite"
+            android:textSize="21sp" />
+
+        <TextView
+            android:id="@+id/pin_code_input_text_view_4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bg_rounded_5px_border_white"
+            android:gravity="center"
+            tools:text="*"
+            android:inputType="textPassword"
+            android:textColor="@color/colorWhite"
+            android:textSize="21sp" />
+
+    </com.glance.streamline.utils.custom_views.SquaredLinearLayout>
+
+    <LinearLayout
+        android:id="@+id/pin_code_buttons_layout"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pin_code_fields_layout"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical">
+
+        <com.glance.streamline.utils.custom_views.SquaredLinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginBottom="14dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <com.glance.streamline.utils.custom_views.PinCodeButton
+                android:id="@+id/pin_code_button_1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="14dp"
+                android:layout_weight="1"
+                app:code_text="1"
+                app:code_text_size="24sp" />
+
+            <com.glance.streamline.utils.custom_views.PinCodeButton
+                android:id="@+id/pin_code_button_2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="14dp"
+                android:layout_weight="1"
+                app:code_text="2"
+                app:code_text_size="24sp" />
+
+            <com.glance.streamline.utils.custom_views.PinCodeButton
+                android:id="@+id/pin_code_button_3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:code_text="3"
+                app:code_text_size="24sp" />
+
+        </com.glance.streamline.utils.custom_views.SquaredLinearLayout>
+
+        <com.glance.streamline.utils.custom_views.SquaredLinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginBottom="14dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <com.glance.streamline.utils.custom_views.PinCodeButton
+                android:id="@+id/pin_code_button_4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="14dp"
+                android:layout_weight="1"
+                app:code_text="4"
+                app:code_text_size="24sp" />
+
+            <com.glance.streamline.utils.custom_views.PinCodeButton
+                android:id="@+id/pin_code_button_5"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="14dp"
+                android:layout_weight="1"
+                app:code_text="5"
+                app:code_text_size="24sp" />
+
+            <com.glance.streamline.utils.custom_views.PinCodeButton
+                android:id="@+id/pin_code_button_6"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:code_text="6"
+                app:code_text_size="24sp" />
+
+        </com.glance.streamline.utils.custom_views.SquaredLinearLayout>
+
+        <com.glance.streamline.utils.custom_views.SquaredLinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginBottom="14dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <com.glance.streamline.utils.custom_views.PinCodeButton
+                android:id="@+id/pin_code_button_7"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="14dp"
+                android:layout_weight="1"
+                app:code_text="7"
+                app:code_text_size="24sp" />
+
+            <com.glance.streamline.utils.custom_views.PinCodeButton
+                android:id="@+id/pin_code_button_8"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="14dp"
+                android:layout_weight="1"
+                app:code_text="8"
+                app:code_text_size="24sp" />
+
+            <com.glance.streamline.utils.custom_views.PinCodeButton
+                android:id="@+id/pin_code_button_9"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:code_text="9"
+                app:code_text_size="24sp" />
+
+        </com.glance.streamline.utils.custom_views.SquaredLinearLayout>
+
+        <com.glance.streamline.utils.custom_views.SquaredLinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <com.glance.streamline.utils.custom_views.PinCodeButton
+                android:id="@+id/pin_code_button_backspace"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="14dp"
+                android:layout_weight="1"
+                app:code_image="@drawable/ic_input_delete"
+                app:code_image_size="24sp" />
+
+            <com.glance.streamline.utils.custom_views.PinCodeButton
+                android:id="@+id/pin_code_button_0"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="14dp"
+                android:layout_weight="1"
+                app:code_text="0"
+                app:code_text_size="24sp" />
+
+            <com.glance.streamline.utils.custom_views.PinCodeButton
+                android:id="@+id/pin_code_button_login"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:code_background_color="@color/colorAccent"
+                app:code_text="@string/login_pin_code_button"
+                app:code_text_size="14sp" />
+
+        </com.glance.streamline.utils.custom_views.SquaredLinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

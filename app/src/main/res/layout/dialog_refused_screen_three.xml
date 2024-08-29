@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Gender"
+            android:textSize="12sp" />
+
+        <RadioGroup
+            android:id="@+id/gender_radio_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!--    <Spinner-->
+        <!--        android:id="@+id/gender_spinner"-->
+        <!--        android:layout_width="match_parent"-->
+        <!--        android:layout_height="wrap_content"/>-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Ethnic Origin"
+            android:textSize="12sp" />
+
+        <RadioGroup
+            android:id="@+id/ethnic_origin_radio_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!--    <Spinner-->
+        <!--        android:id="@+id/ethnic_origin_spinner"-->
+        <!--        android:layout_width="match_parent"-->
+        <!--        android:layout_height="wrap_content"/>-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Approx Age"
+            android:textSize="12sp" />
+
+        <RadioGroup
+            android:id="@+id/approx_age_radio_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!--    <Spinner-->
+        <!--        android:id="@+id/approx_age_spinner"-->
+        <!--        android:layout_width="match_parent"-->
+        <!--        android:layout_height="wrap_content"/>-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Height"
+            android:textSize="12sp" />
+
+        <RadioGroup
+            android:id="@+id/height_radio_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!--    <Spinner-->
+        <!--        android:id="@+id/height_spinner"-->
+        <!--        android:layout_width="match_parent"-->
+        <!--        android:layout_height="wrap_content"/>-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Build"
+            android:textSize="12sp" />
+
+        <RadioGroup
+            android:id="@+id/build_radio_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!--    <Spinner-->
+        <!--        android:id="@+id/build_spinner"-->
+        <!--        android:layout_width="match_parent"-->
+        <!--        android:layout_height="wrap_content"/>-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Hair Colour"
+            android:textSize="12sp" />
+
+        <RadioGroup
+            android:id="@+id/hair_colour_radio_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!--    <Spinner-->
+        <!--        android:id="@+id/hair_colour_spinner"-->
+        <!--        android:layout_width="match_parent"-->
+        <!--        android:layout_height="wrap_content"/>-->
+    </LinearLayout>
+</ScrollView>

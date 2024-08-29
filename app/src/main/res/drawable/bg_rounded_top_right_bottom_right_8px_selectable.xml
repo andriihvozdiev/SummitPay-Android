@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/bg_rounded_top_right_bottom_right_8px" />
+    <item android:drawable="?attr/selectableItemBackground" />
+</layer-list>
